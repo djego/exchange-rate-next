@@ -18,16 +18,22 @@ const Home = ({ houses }: Props) => {
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Todas las tiendas de cambio online 
+          Todas las tiendas de cambio online &#36;
         </h1>
-
-      
         <div className={styles.grid}>
         <ListHouse houses={houses} />
+
+        <a href="#" className={styles.card}>
+            <h2>Más tiendas pronto...</h2>
+            <p></p>
+          </a>
+
         </div>
+        
       </main>
 
       <footer className={styles.footer}>
+        <p><a href="https://github.com/djego/exchange-rate-next" target="_blank">Github</a></p>
       </footer>
     </div>
   )
