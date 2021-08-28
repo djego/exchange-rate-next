@@ -78,6 +78,7 @@
 }
 
 .card {
+  width: 20rem;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;

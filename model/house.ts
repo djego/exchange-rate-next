@@ -3,5 +3,7 @@ export interface House {
     tienda: string;
     url: string;
     venta: number;
+    image: string;
+    fecha: string;
   }
   

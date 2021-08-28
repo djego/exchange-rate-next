@@ -8,6 +8,6 @@ export const fetchStores = async (): Promise<House[]> => {
   const res = await fetch(storeCollectionURL)
   const data = await res.json();
   return data.map(
-    ({ compra, tienda, url, venta, }: any) => ({ compra, tienda, url, venta,  } as House)
+    ({ compra, tienda, url, venta, image, fecha }: any) => ({ compra, tienda, url, venta, image, fecha } as House)
   );
 }
