@@ -15,7 +15,7 @@ export const ListHouse = ({ houses }: Props) => {
         <a href={house.url} key={id} className={styles.card} > 
           <h2><img src={house.image} width="16" /> {house.tienda}</h2>
           <p>Compra: <b>{house.compra}</b> | Venta: <b>{house.venta}</b></p>
-          <Moment locale="es" fromNow>{house.fecha}</Moment>
+          <span>Actualizado </span><Moment locale="es" fromNow>{house.fecha}</Moment>
         </a>
       )}
   </>

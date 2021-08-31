@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import { fetchStores } from '../api/rest';
 import { House } from '../model/house';
 import { ListHouse } from '../components/list';
+import Image from 'next/image'
+
 interface Props {
   houses: House[];
 }
@@ -16,7 +18,9 @@ const Home = ({ houses }: Props) => {
         <meta name="description" content="Cambio de dolares en todas las tiendas online" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={styles.main}>
+        <Image src="/logo-horizontal.png" alt="Dolar en perú logo" width="250" height="75"  />
         <h1 className={styles.title}>
         Tiendas de cambio online en Perú
         </h1>
