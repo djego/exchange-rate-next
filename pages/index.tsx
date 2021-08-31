@@ -12,13 +12,13 @@ const Home = ({ houses }: Props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Dolares en todas las tiendas</title>
+        <title>Dolares en Perú, tiendas</title>
         <meta name="description" content="Cambio de dolares en todas las tiendas online" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Todas las tiendas de cambio online &#36;
+        Tiendas de cambio online en Perú
         </h1>
         <div className={styles.grid}>
         <ListHouse houses={houses} />
