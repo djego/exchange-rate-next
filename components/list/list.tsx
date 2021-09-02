@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const ListHouse = ({ houses }: Props) => {
-  const sell_cheap_houses = houses.sort((a, b) => a.compra - b.compra);
+  const sell_cheap_houses = houses.sort((a, b) => a.venta - b.venta);
   return (
   <>
       { sell_cheap_houses.map( (house, id) => 
