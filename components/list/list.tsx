@@ -12,7 +12,7 @@ export const ListHouse = ({ houses }: Props) => {
   return (
   <>
       { sell_cheap_houses.map( (house, id) => 
-        <a href={house.url} key={id} className={styles.card} > 
+        <a href={house.url} key={id} className={styles.card} target="_blank" > 
           <h2><img src={house.image} width="16" /> {house.tienda}</h2>
           <p>Compra: <b>{house.compra}</b> | Venta: <b>{house.venta}</b></p>
           <span>Actualizado </span><Moment locale="es" fromNow>{house.fecha}</Moment>
