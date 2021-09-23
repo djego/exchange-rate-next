@@ -34,8 +34,8 @@ const Home = ({ houses }: Props) => {
         <ListHouse houses={houses} />
 
         <a href="#" className={styles.card}>
-            <h2>Más tiendas pronto...</h2>
-            <p></p>
+            <h2></h2>
+            <p>Más tiendas pronto...</p>
           </a>
 
         </div>

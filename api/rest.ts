@@ -1,7 +1,7 @@
 import { House } from '../model/house';
 import fetch from 'isomorphic-unfetch';
 
-const baseRoot = 'https://ij5n9r.deta.dev/v1';
+const baseRoot = process.env.NEXT_PUBLIC_API_URI;
 const storeCollectionURL = `${baseRoot}/resume`
 
 export const fetchStores = async (): Promise<House[]> => {
