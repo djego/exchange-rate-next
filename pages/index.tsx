@@ -32,12 +32,6 @@ const Home = ({ houses }: Props) => {
         </h1>
         <div className={styles.grid}>
         <ListHouse houses={houses} />
-
-        <a href="#" className={styles.card}>
-            <h2></h2>
-            <p>Más tiendas pronto...</p>
-          </a>
-
         </div>
         
       </main>
