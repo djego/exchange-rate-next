@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { fetchStores } from '../api/rest';
@@ -37,7 +36,7 @@ const Home = ({ houses }: Props) => {
       </main>
 
       <footer className={styles.footer}>
-        <p><a href="https://github.com/djego/exchange-rate-next" target="_blank">Github</a></p>
+        <p><a rel="noopener" href="https://github.com/djego/exchange-rate-next" target="_blank">Github</a></p>
       </footer>
     </div>
   )
