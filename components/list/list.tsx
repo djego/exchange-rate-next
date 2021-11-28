@@ -8,10 +8,10 @@ interface Props {
 }
 
 export const ListHouse = ({ houses }: Props) => {
-  const sell_cheap_houses = houses.sort((a, b) => a.venta - b.venta);
+    houses.sort((a, b) => a.venta - b.venta);
   return (
   <>
-      { sell_cheap_houses.map( (house, id) => 
+      { houses.map( (house, id) => 
         <a href={house.url} key={id} className={styles.card} target="_blank" rel="noopener" > 
           <h2><img src={house.image} width="16" height="16" alt={house.tienda} /> {house.tienda}</h2>
           <p>Compra: <b>{house.compra}</b></p>
