@@ -36,7 +36,7 @@ const Home = ({ houses }: Props) => {
       </main>
 
       <footer className={styles.footer}>
-        <p><a rel="noopener" href="https://github.com/djego/exchange-rate-next" target="_blank">Github</a></p>
+        <p><a rel="noreferrer" href="https://github.com/djego/exchange-rate-next" target="_blank">Github</a></p>
       </footer>
     </div>
   )
