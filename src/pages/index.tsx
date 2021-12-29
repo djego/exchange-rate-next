@@ -13,8 +13,8 @@ const Home = ({ houses }: Props) => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Dolares en Perú, tiendas de cambio online</title>
-        <meta name="description" content={"Compra: "+houses[0].compra+" - Venta: "+houses[0].venta+" | Tiendas de cambio online en Perú"} />
+        <title>{"Dolares en Perú | Compra: "+houses[0].compra+" - Venta: "+houses[0].venta}</title>
+        <meta name="description" content={"Cambia dolares al mejor precio de compra y venta en las tiendas de cambio online"} />
         <meta name="theme-color" content="#ffffff"></meta>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
