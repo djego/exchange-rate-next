@@ -20,7 +20,7 @@ export const ListHouse = ({ houses }: Props) => {
       )}
       </div>
       <div className={styles.bottom}>
-      <span>Actualizado: </span><Moment locale="es" fromNow>{houses[0].fecha}</Moment>  
+      <span>Se actualiza cada 10 minutos</span>
       </div>      
     </div>
 
