@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { fetchStores } from "../api/rest";
-import { House } from "../model/house";
+import { House } from "../interfaces/house";
 import { ListHouse } from "../components/list";
 import Image from "next/image";
 
@@ -83,6 +83,7 @@ Home.getInitialProps = async () => {
   const houses = await fetchStores();
   return {
     houses,
+    revalidate: 5 * 60,
   };
 };
 

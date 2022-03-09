@@ -1,4 +1,4 @@
-import { House } from '../model/house';
+import { House } from '../interfaces/house';
 import axios from 'axios';
 
 const baseRoot = process.env.NEXT_PUBLIC_API_URI;

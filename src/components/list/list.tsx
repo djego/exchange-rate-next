@@ -1,4 +1,4 @@
-import { House } from '../../model/house';
+import { House } from '../../interfaces/house';
 import styles from '../../styles/Home.module.css';
 import Moment from 'react-moment';
 import 'moment/locale/es';
