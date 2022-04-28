@@ -82,8 +82,7 @@ const Home = ({ houses }: Props) => {
 Home.getInitialProps = async () => {
   const houses = await fetchStores();
   return {
-    houses,
-    revalidate: 5 * 60,
+    houses
   };
 };
 
