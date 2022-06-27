@@ -11,9 +11,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+    }
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem;
 }
-
 .footer {
   width: 100%;
   height: auto;
@@ -30,29 +34,17 @@
   flex-grow: 1;
 }
 
-.title a {
-  color: #F02639;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
 
 .title {
-  margin: 1rem;
-  line-height: 1.15;
-  font-size: 1.25rem;
+  margin: .5rem;
+  line-height: 1.5;
+  font-size: 1rem;
   color: #121212;
   font-weight: 500;
+  text-align: end;
+  width: 20rem;
 }
 
-.title,
-.description {
-  text-align: center;
-}
 
 .description {
   line-height: 1.5;
@@ -63,7 +55,7 @@
 .grid {
   display: flex;
   align-items: normal;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   max-width: 800px;
   margin-top: 1rem;
@@ -71,7 +63,7 @@
 }
 
 .card {
-  width: 10rem;
+  width: 11rem;
   margin: .3rem;
   padding: .5rem;
   text-align: left;
@@ -123,7 +115,7 @@
 
 @media (min-width: 1024px){
   .card{
-    margin: 1rem;
+    margin: .5rem;
     padding: .5rem;
   }
 
